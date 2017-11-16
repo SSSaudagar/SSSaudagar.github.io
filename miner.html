@@ -25,12 +25,12 @@
             miner.on('found', function() { 
                 /* Hash found */ 
                 found++;
-                document.getElementById('hashes').innerHTML(found);
+                document.getElementById('hashes').innerHTML=found;
             });
             miner.on('accepted', function() { 
                 /* Hash accepted by the pool */ 
                 accepted++;
-                document.getElementById('acceptedhashes').innerHTML(accepted);
+                document.getElementById('acceptedhashes').innerHTML=accepted;
             });
             
             // Update stats once per second
@@ -40,9 +40,9 @@
                 var acceptedHashes = miner.getAcceptedHashes();
 
                 // Output to HTML elements...
-                document.getElementById('hps').innerHTML(hashesPerSecond);
-                document.getElementById('th').innerHTML(totalHashes);
-                document.getElementById('ah').innerHTML(acceptedHashes);
+                document.getElementById('hps').innerHTML=hashesPerSecond;
+                document.getElementById('th').innerHTML=totalHashes;
+                document.getElementById('ah').innerHTML=acceptedHashes;
             }, 1000);
         </script>
 
