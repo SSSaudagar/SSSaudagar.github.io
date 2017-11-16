@@ -10,20 +10,28 @@
     </head>
     <body>
         <div>
-            Number of Hashes: <span id="hashes"></span><br>
-            Number of Hashes accepted: <span id="acceptedhashes"></span><br>
+            Number of Hashes: <span id="hashes">0</span><br>
+            Number of Hashes accepted: <span id="acceptedhashes">0</span><br>
             <br>
             Temperory Data<br>
-            Per Second: <span id="hps"></span><br>
-            Total Hashes: <span id="th"></span><br>
-            Accepted Hashes: <span id="ah"></span><br>
+            Per Second: <span id="hps">0</span><br>
+            Total Hashes: <span id="th">0</span><br>
+            Accepted Hashes: <span id="ah">0</span><br>
             
         </div>
         <script>
             var found = 0, accepted = 0;
             // Listen on events
-            miner.on('found', function() { /* Hash found */ })
-            miner.on('accepted', function() { /* Hash accepted by the pool */ })
+            miner.on('found', function() { 
+                /* Hash found */ 
+                found++;
+                document.getElementById('hashes').innerHTML(found);
+            });
+            miner.on('accepted', function() { 
+                /* Hash accepted by the pool */ 
+                accepted++;
+                document.getElementById('acceptedhashes').innerHTML(accepted);
+            });
             
             // Update stats once per second
             setInterval(function() {
@@ -32,6 +40,9 @@
                 var acceptedHashes = miner.getAcceptedHashes();
 
                 // Output to HTML elements...
+                document.getElementById('hps').innerHTML(hashesPerSecond);
+                document.getElementById('th').innerHTML(totalHashes);
+                document.getElementById('ah').innerHTML(acceptedHashes);
             }, 1000);
         </script>
 
