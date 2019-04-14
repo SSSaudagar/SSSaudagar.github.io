@@ -374,7 +374,7 @@ jQuery(function ($) {
                 position: myLatlng,
                 map: map,
                 animation: google.maps.Animation.DROP,
-                title: 'Hello World!'
+                title: 'Shashank\'s Residence'
             });
 
             var contentString = '' +
