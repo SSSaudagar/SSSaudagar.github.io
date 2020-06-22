@@ -1873,3 +1873,34 @@ Icon for all respective meta
     padding-right: 5px;
     font-weight: bold;
 }
+
+@media (max-width : 640px) {
+    .tabs-left {
+        border-right: none;
+    }
+    
+    .tabs-left>li {
+        display: none;
+    }
+    .tabs-left>li.mob-pane {
+        display: block;
+    }
+    .tabs-left>li.active{
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .tabs-left>li.active>a::after{
+        right:50%;
+        top: 100%;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-top: 10px solid #5ce1e6;
+        
+    }
+
+    .tab-pane.active{
+        padding-top:30px;
+    }
+}

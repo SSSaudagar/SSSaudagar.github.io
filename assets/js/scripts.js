@@ -319,6 +319,38 @@ jQuery(function ($) {
 
     });
 
+    function hidemob (elem){
+        if($(elem).hasClass('active')){
+            $(elem).removeClass('active');
+            $($(elem).find('a').attr('href')).removeClass('active');
+        }
+    }
+
+    $('.tabs-left>li').click(function(event){
+        if($(this).hasClass('active')){
+            $("html, body").stop();
+            event.stopPropagation();
+            $('.tabs-left>li').addClass('mob-pane');
+        }else{
+            $('.tabs-left>li').removeClass('mob-pane');
+            console.log($(window).scrollTop(),$($(".tabs-left")[0]).offset().top )
+            $(window).scrollTop($($(".tabs-left")[0]).offset().top -300)
+           
+        }
+    });
+
+
+    if($(window).innerWidth() < 640){
+        $('.tabs-left>li').each(function(){
+            hidemob(this);
+        });
+        // $('.tabs-left').scrollspy('dispose');
+        $('.tabs-left>li').addClass('mob-pane');
+        $('.tabs-left>li').click(function(event){
+            hidemob(this,event);
+        });
+    }
+    
 
 });
 
