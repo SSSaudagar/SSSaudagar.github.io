@@ -43,7 +43,7 @@
   <!-- Magnific css -->
 	<link href="assets/css/magnific-popup.css" rel="stylesheet">
 	<!-- Custom styles CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+	<link href="assets/css/style.css?v=1" rel="stylesheet" media="screen">
   <!-- Responsive CSS -->
   <link href="assets/css/responsive.css" rel="stylesheet">
 
@@ -580,186 +580,108 @@
 
       </div><!-- /.container -->
     </section><!-- End Skills Section -->
-
+    
+    
 
     <!-- Works Section -->
     <section id="works" class="works-section section-padding">
-<!--
       <div class="container">
-        <h2 class="section-title wow fadeInUp">Works</h2>
-
-        <ul class="list-inline" id="filter">
-            <li><a class="active" data-group="all">All</a></li>
-            <li><a data-group="design">Design</a></li>
-            <li><a data-group="web">Web</a></li>
-            <li><a data-group="interface">Interface</a></li>
-            <li><a data-group="identety">Identity</a></li>
-        </ul>
-
+        <h2 class="section-title wow fadeInUp">Top Projects</h2>
         <div class="row">
-          <div id="grid">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "interface"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-1.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div>
-                  <img src="assets/images/works/portfolio-1.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div>
-              </div>
-            </div>
-
-
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-2.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div>
-                  <img src="assets/images/works/portfolio-2.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div>
+          <div class="col-xs-7"> <!-- required for floating -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-left sideways">
+              <li class="active"><a href="#weddingz-v" data-toggle="tab">
+                <div id="showdiv1" class="text-black text-link">
+                  <div class="work-tab-heading">Weddingz by OYO</div>
+                  <div class="work-tab-subtext">Marketplace for the wedding industry. Acquired by Softbank-backed OyoRooms in 2018.</div>
+                </div>
+              </a></li>
+              <li><a href="#kss-v" data-toggle="tab">
+                <div id="showdiv2" class="text-black text-link">
+                  <div class="work-tab-heading">Kid Super Store</div>
+                  <div class="work-tab-subtext">Multi-channel Marketplace for kids apparel and accessories by Omni Edge Retail Pvt Ltd</div>
+                </div>
+              </a></li>
+              <li><a href="#growthinvest-v" data-toggle="tab">
+                <div id="showdiv3" class="text-black text-link">
+                  <div class="work-tab-heading">GrowthInvest</div>
+                  <div class="work-tab-subtext">London-based platform that helps startups raise early stage investment.</div>
+                </div>
+              </a></li>
+              <li><a href="#devicebook-v" data-toggle="tab">
+                <div id="showdiv4" class="text-black text-link">
+                  <div class="work-tab-heading">Devicebook</div>
+                  <div class="work-tab-subtext">US based IOT integrating application that helps your smart devices to talk to each other.</div>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+  
+          <div class="col-xs-5">
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="weddingz-v">
+                <center><h3>Work done at Weddingz</h3></center>
+                <div class="work-tab-details">
+                  <p><span>Stack:</span>Django (Python), AWS, Akamai</p>
+                  <p>In this project I spearheaded 3 key areas viz. SEO, Speed Optimization and Microservice for Web 2.0. </p>
                 </div>
               </div>
-            </div>
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "interface"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-3.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div>
-                  <img src="assets/images/works/portfolio-3.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div>
+              <div class="tab-pane" id="kss-v">
+                <center><h3>Work done at Kid Super Store</h3></center>
+                <div class="work-tab-details">
+                  <p><span>Stack:</span>Laravel (PHP), AWS</p>
+                  <p>Managed a team of 6 to build microservice based architechture that could synchronise inventory accross multiple channels and serve them fast via elasticsearch</p>
                 </div>
               </div>
-            </div>
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-4.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div>
-                  <img src="assets/images/works/portfolio-4.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div>
+              <div class="tab-pane" id="growthinvest-v">
+                <center><h3>Work done at Growthinvest</h3></center>
+                <div class="work-tab-details">
+                  <p><span>Stack:</span>Wordpress (PHP), Linode</p>
+                  <p>Server upgradation, security etc</p>
                 </div>
               </div>
-            </div>
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-5.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div>
-                  <img src="assets/images/works/portfolio-5.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-6.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div>
-                  <img src="assets/images/works/portfolio-6.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-7.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div>
-                  <img src="assets/images/works/portfolio-7.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-8.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div>
-                  <img src="assets/images/works/portfolio-8.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div>
+              <div class="tab-pane" id="devicebook-v">
+                <center><h3>Work done at Devicebook</h3></center>
+                <div class="work-tab-details">
+                  <p><span>Stack:</span>Node.js, Azure</p>
+                  <p>Wrote drivers for smart devices. Managed the website project and worked extensively on the SEO</p>
                 </div>
               </div>
             </div>
           </div>
+  
+          <div class="clearfix"></div>
         </div>
       </div>
--->
     </section><!-- End Works Section -->
 
 
     <!-- Facts Section -->
     <section id="facts" class="facts-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
-<!--
+
       <div class="tt-overlay-bg">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="count-wrap">
-                <div class="col-sm-3 col-xs-6">
+                <div class="col-sm-6 col-xs-6">
                   <i class="fa fa-flask"></i>
-                  <h3 class="timer">7</h3>
+                  <h3 class="timer">4</h3>
                   <p>Years of Experience</p>
                 </div>
-                <div class="col-sm-3 col-xs-6"> 
+                <div class="col-sm-6 col-xs-6"> 
                   <i class="fa fa-thumbs-up"></i>
-                  <h3 class="timer">651</h3>                
+                  <h3 class="timer">13</h3>                
                   <p>Projects Done</p>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                  <i class="fa fa-users"></i>
-                  <h3 class="timer">251</h3> 
-                  <p>Happy Clients</p>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                  <i class="fa fa-trophy"></i>
-                  <h3 class="timer">5</h3> 
-                  <p>Awards Won</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
--->
+
     </section> <!-- End Facts Section -->
 
 
